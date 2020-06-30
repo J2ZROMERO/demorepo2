@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>REGISTRO</title>
+
+<style>
+	
+body,html{
+width: *vh;
+height: 100vh;
+margin:0;
+
+display: flex;
+justify-content: center;
+align-items: center;
+} form{
+	background-color: #82E169;
+	opacity: .9;
+width: 40vh;
+height: 50vh;
+display: flex;
+align-items: center;
+flex-direction: column;
+flex-wrap: wrap;
+align-content: space-around;
+justify-content: space-around;
+font-size: 40px;font-family: sans-serif;
+}
+body{
+	background-color: #2DF0F2;
+
+}
+</style>
+
+
+</head>
+<body background="imagenes/sesion.gif">
+<form action="ingresar.php" method="POST">
+	
+USUARIO  <input type="text" name="usuario" value="ingresa tu nombre">
+
+CONTRASENIA <input type="password" name="contrasena">
+<input type="submit" name="enviar" value="ingresar">
+ <input type="submit" name="registrar" value="registrar">
+</form>
+
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+<script src="jquery/jquery.js"></script>
+<script src="jquery/jquery.adipoli.min.js"></script>
+<script src="jquery/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+<script src="jquery/jquery-ui-1.12.1/jquery-ui.min.css"></script>
+
+	<style>
+		body,html{
+
+			display: flex;
+		}
+
+body{
+	width: 100%;
+	height: 100%;
+flex-flow: row wrap;
+}
+#mostrar{
+	width: 50%;
+	height: 50%;
+	background-color: red;
+	display: flex;
+	justify-content: center;align-items: center;
+}
+
+	</style>
+	<script>
+		
+
+		$(function() {
+	$('#mostrar').hide();
+	$('#mostra').mouseover(function(event) {
+event.preventDefault();
+$("#mostrar").show('slow/400/fast');
+	});
+
+$('#mostrar').mouseleave(function(event) {
+event.preventDefault();
+$("#mostrar").hide('slow/400/fast');
+});
+
+});
+var i=0;
+ var o=['imagenes/programador.jpg','imagenes/programador2.jpeg','imagenes/programador3.jpg','imagenes/programador4.jpg','imagenes/programador5.png'];
+
+var imagen=document.getElementById("correimagen"); 
+
+
+  
+
+
+
+
+function cambioimagen() {
+
+
+imagen.setAttribute("src",o[i]);
+	i++;
+if (i >2 ) {
+
+	i=0;;
+}
+
+}
+function cambioimagen() {
+document.slide.src=o[i];
+if (i<o.length-1) {
+i++;
+}else{
+	i=0;
+}
+setTimeout("cambioimagen()", 10000);
+}
+window.onload=cambioimagen;
+
+function detenerimagen(){
+
+
+
+
+}
+
+	</script>
+</head>
+<body>
+
+
+
+	
+
+<a href=""><img src="imagenes/galeria.png"  id="mostra"></a>
+
+
+
+<div id="mostrar" >
+	
+
+<img  id="correimagen">
+
+<img name="slide" alt="" onclick="cambioimagen()">
+
+  
+  
+
+</div>
+
+<!--
+<form action="https://www.google.com/search" method="GET" value="buscardor" >
+	<input type="text"  name="q" placeholder="BUSCADOR" >
+<input type="submit" value="BUSCARDOR GOOGLE" >
+</form>
+
+  <iframe name=ventana style="background-color: red;" scrolling="auto"></iframe>-->
+
+
+<!--
+
+
+<a href="q" target="ventana" onclick="location.href='http://google.com';" >El foro en la ventana</a>
+<iframe name=ventana scrolling="auto" ></iframe>
+
+
+
+
+<input type="text" name="q" placeholder="BUSCADOR">
+<input type="button" onclick="location.href='http://google.com';" value="Go to Google" />// -->
+
+
+
+</body>
+</html>

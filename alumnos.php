@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>NUEVO CAMBIO</title>
+	<title>NUEVO CAMBIO mas cambios</title>
 </head>
 <body>
 <form action="alumnos.php" method="POST">
